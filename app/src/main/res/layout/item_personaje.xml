@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivFoto"
@@ -19,9 +19,9 @@
         android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="192dp"
-        android:text="TextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="124dp"
+        tools:text="Nombre"
         app:layout_constraintEnd_toStartOf="@+id/ivFoto"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,9 +31,9 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="192dp"
-        android:text="TextView"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="124dp"
+        tools:text="Titulo Familia"
         app:layout_constraintEnd_toStartOf="@+id/ivFoto"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,19 +43,21 @@
         android:id="@+id/tvFamilia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="56dp"
-        android:text="TextView"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        tools:text="Familia"
         app:layout_constraintEnd_toStartOf="@+id/ivFoto"
-        app:layout_constraintTop_toBottomOf="@+id/tvApellido" />
+        app:layout_constraintStart_toEndOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellido"/>
 
     <TextView
         android:id="@+id/tvApellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
-        android:text="TextView"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Apellido"
         app:layout_constraintEnd_toStartOf="@+id/ivFoto"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

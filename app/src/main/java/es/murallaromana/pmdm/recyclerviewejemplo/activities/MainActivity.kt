@@ -32,5 +32,8 @@ class MainActivity : AppCompatActivity() {
         //Asocio el RecuclerView con sus componentes
         binding.rvListaPersonajes.adapter = adapter
         binding.rvListaPersonajes.layoutManager = layoutManager
+
+        //Si la lista no va a cambiar
+
     }
 }
